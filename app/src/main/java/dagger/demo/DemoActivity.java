@@ -12,7 +12,7 @@ public class DemoActivity extends Activity implements HasComponent<DemoActivityC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        this.component = Dagger_DemoActivityComponent.builder()
+        this.component = DaggerDemoActivityComponent.builder()
                 .demoApplicationComponent(((DemoApplication) getApplication()).getComponent())
                 .activityModule(new ActivityModule(this))
                 .build();

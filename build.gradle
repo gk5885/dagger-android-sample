@@ -3,7 +3,7 @@ buildscript {
     jcenter()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:0.14.1'
+    classpath 'com.android.tools.build:gradle:1.2.3'
     classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
   }
 }
@@ -11,8 +11,5 @@ buildscript {
 allprojects {
   repositories {
     mavenCentral()
-    maven {
-      url 'https://oss.sonatype.org/content/repositories/snapshots/'
-    }
   }
 }
