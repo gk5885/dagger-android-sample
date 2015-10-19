@@ -12,7 +12,7 @@ public class DemoApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        this.component = Dagger_DemoApplicationComponent.builder()
+        this.component = DaggerDemoApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this))
                 .build();
         component.injectApplication(this);
